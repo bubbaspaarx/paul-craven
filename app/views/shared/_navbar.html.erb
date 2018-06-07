@@ -1,0 +1,29 @@
+<div class="navbar navbar-fixed-top">
+  <!-- Logo -->
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "logo.png", height: 50 %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-right hidden-xs hidden-sm">
+
+    <!-- Links -->
+    <%= link_to "Home", "#home", class: "navbar-item navbar-link"%>
+    <%= link_to "About", "#about", class: "navbar-item navbar-link"%>
+    <%= link_to "Our Projects", "#projects", class: "navbar-item navbar-link"%>
+    <%= link_to "Find us", "#gmap", class: "navbar-item navbar-link" %>
+  </div>
+
+  <!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Our Projects</a></li>
+        <li><a href="#gmap">Find us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
