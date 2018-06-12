@@ -1,5 +1,5 @@
 .video-wrapper {
-  height: 50vh;
+  height: auto;
   background-color: #012147;
 }
 
@@ -11,6 +11,7 @@
 .videos {
 display: block;
 margin: 30px auto;
+margin-bottom: 40px;
 }
 
 .slick-prev,
@@ -21,4 +22,32 @@ margin: 30px auto;
     font-size: 38px !important;
     color: $brand-primary !important;
   }
+}
+
+#slick-slide-control00:before {
+  content: "♣";
+  font-size: 30px;
+  color: $brand-primary;
+}
+
+#slick-slide-control01:before {
+  content: "♦";
+  font-size: 30px;
+  color: $brand-primary;
+}
+
+#slick-slide-control02:before {
+  content: "♥";
+  font-size: 30px;
+  color: $brand-primary;
+}
+
+#slick-slide-control04:before {
+  content: "♠";
+  font-size: 30px;
+  color: $brand-primary;
+}
+
+.slick-dots li {
+  height: 35px !important;
 }
