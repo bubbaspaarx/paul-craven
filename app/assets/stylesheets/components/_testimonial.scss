@@ -1,19 +1,38 @@
-.video-wrapper {
+.testimonial-wrapper {
   height: auto;
   background-color: #012147;
 }
 
-.video-title {
+.testimonial-title {
   margin-top: 50px;
+  margin-bottom: 40px;
   text-align: center;
-  color: #fff;
   color: $brand-primary;
 }
 
-.videos {
-display: block;
-margin: 30px auto;
-margin-bottom: 40px;
+.content-test {
+  color: #fff;
+}
+
+.quotes {
+  color: #fff;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  margin-top: 30px;
+  float: right;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.testimonials {
+  display: block;
+  margin: 30px auto;
+  margin-bottom: 40px;
 }
 
 .slick-prev,
@@ -26,25 +45,25 @@ margin-bottom: 40px;
   }
 }
 
-#slick-slide-control00:before {
+#slick-slide-control10:before {
   content: "♣";
   font-size: 30px;
   color: $brand-primary;
 }
 
-#slick-slide-control01:before {
+#slick-slide-control11:before {
   content: "♦";
   font-size: 30px;
   color: $brand-primary;
 }
 
-#slick-slide-control02:before {
+#slick-slide-control12:before {
   content: "♥";
   font-size: 30px;
   color: $brand-primary;
 }
 
-#slick-slide-control03:before {
+#slick-slide-control13:before {
   content: "♠";
   font-size: 30px;
   color: $brand-primary;

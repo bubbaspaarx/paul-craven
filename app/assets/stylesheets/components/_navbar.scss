@@ -3,16 +3,27 @@
   background: white;
   background-color: transparent;
   transition: all 0.3s ease;
-  height: 70px;
+  height: auto;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo-small {
+  height: 50px !important;
+  margin-top: 0px !important;
+}
+
+.navbar-white {
+  background-color: #fff
+}
+
 /* Logo */
-.navbar-sparks-brand img {
-  height: 50px;
+.navbar-sparks-brand {
+  height: 110px;
+  margin-top: 10px;
+  transition: height ease .5s;
 }
 
 /* Right section */

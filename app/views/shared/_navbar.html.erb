@@ -1,7 +1,7 @@
 <div class="navbar-sparks navbar-fixed-top">
   <!-- Logo -->
-  <%= link_to root_path, class: "navbar-sparks-brand" do %>
-    <%= image_tag "logo.png", height: 50 %>
+  <%= link_to root_path do %>
+    <%= image_tag "logo.png", class: "navbar-sparks-brand" %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -10,8 +10,8 @@
     <!-- Links -->
     <%= link_to "Home", "#home", class: "navbar-sparks-item navbar-sparks-link"%>
     <%= link_to "About", "#about", class: "navbar-sparks-item navbar-sparks-link"%>
-    <%= link_to "Our Projects", "#projects", class: "navbar-sparks-item navbar-sparks-link"%>
-    <%= link_to "Find us", "#gmap", class: "navbar-sparks-item navbar-sparks-link" %>
+    <%= link_to "Videos", "#videos", class: "navbar-sparks-item navbar-sparks-link"%>
+    <%= link_to "Talks", "#talks", class: "navbar-sparks-item navbar-sparks-link" %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
@@ -21,8 +21,8 @@
       <ul class="dropdown-menu dropdown-menu-right navbar-sparks-dropdown-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Our Projects</a></li>
-        <li><a href="#gmap">Find us</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#talks">Talks</a></li>
       </ul>
     </div>
   </div>

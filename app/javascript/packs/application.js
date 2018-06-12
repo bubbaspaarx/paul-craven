@@ -9,3 +9,5 @@ AOS.init();
 
 
 import '../components/slick';
+import '../components/scroll';
+initUpdateNavbarOnScroll()
