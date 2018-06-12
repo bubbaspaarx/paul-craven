@@ -1,0 +1,24 @@
+.video-wrapper {
+  height: 50vh;
+  background-color: #012147;
+}
+
+.video-title {
+  text-align: center;
+  color: #fff;
+}
+
+.videos {
+display: block;
+margin: 30px auto;
+}
+
+.slick-prev,
+.slick-next {
+  // left: 0px !important;
+  // right: 0px !important;
+  &:before {
+    font-size: 38px !important;
+    color: $brand-primary !important;
+  }
+}

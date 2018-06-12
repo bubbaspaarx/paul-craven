@@ -1,5 +1,5 @@
 function initUpdateNavbarOnScroll() {
-  const navbar = document.querySelector('.navbar');
+  const navbar = document.querySelector('.navbar-sparks');
 
   window.addEventListener('scroll', () => {
     if (window.scrollY >= window.innerHeight) {
