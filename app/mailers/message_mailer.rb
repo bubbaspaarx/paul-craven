@@ -1,13 +1,7 @@
 class MessageMailer < ApplicationMailer
-require 'mailgun'
   def email_contact(message)
     @message = message
-    mg_client = Mailgun::Client.new ENV['mailgun_secret_api_key']
-    message_params = {:from => message.email,
-                      :to => ENV['email'],
-                      :subject => 'Paul Craven Enquiry',
-                      :text => message.body}
-    mg_client.send_message ENV['mailgun_domain'], message_params
+    mail(to: @message.email, subject: "Paul Craven Enquiry")
   end
 
   def email_enquiry(message)
