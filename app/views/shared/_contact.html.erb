@@ -1,0 +1,16 @@
+<div class="contact-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <%= simple_form_for(resource_name, url: "/message") do |f| %>
+        <%= f.input :name, required: false, label: false, placeholder: "Your Name"  %>
+        <%= f.input :email, required: false, label: false, placeholder: "Email"  %>
+        <%= f.input :phone_number, required: false, label: false, placeholder: "Contact Number"  %>
+        <%= f.input :date, required: false, label: false, placeholder: "Event Date"  %>
+        <%= f.input :body, required: false, label: false, placeholder: "Event Info"  %>
+        <%= f.button :submit, "Send" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
