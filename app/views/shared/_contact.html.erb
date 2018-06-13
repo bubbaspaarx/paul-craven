@@ -1,4 +1,4 @@
-<div class="contact-wrapper">
+<div class="contact-wrapper" id="contact">
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
@@ -7,7 +7,7 @@
         <%= f.input :email, required: false, label: false, placeholder: "Email"  %>
         <%= f.input :phone_number, required: false, label: false, placeholder: "Contact Number"  %>
         <%= f.input :date, required: false, label: false, placeholder: "Event Date"  %>
-        <%= f.input :body, required: false, label: false, placeholder: "Event Info"  %>
+        <%= f.input :body, required: false, label: false, as: :text,  placeholder: "Event Info"  %>
         <%= f.button :submit, "Send" %>
         <% end %>
       </div>

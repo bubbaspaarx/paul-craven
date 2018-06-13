@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.scss'
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 AOS.init();
 
-
+import '../components/tabs';
 import '../components/slick';
 import '../components/scroll';
 initUpdateNavbarOnScroll()

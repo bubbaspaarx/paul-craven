@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.talk-tab.active a {
+.talk-tab a:focus {
   color: $brand-primary2 !important;
   border: 1px solid $brand-primary2 !important;
 }
