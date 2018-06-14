@@ -31,3 +31,18 @@
 
 en:
   hello: "Hello world"
+  errors:
+    messages:
+      email: "👀 looks like your email is invalid"
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            first_name:
+              blank: "Oops, you need a first name 😊"
+            last_name:
+              blank: "You forgot your surname 👍"
+            email:
+              blank: "Oops, you forgot your email address 👍"
+              invalid: "👀 looks like your email is invalid"

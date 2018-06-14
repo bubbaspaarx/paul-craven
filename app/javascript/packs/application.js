@@ -7,8 +7,15 @@ import 'slick-carousel/slick/slick-theme.scss'
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 AOS.init();
 
+import '../components/alert';
 import '../components/tabs';
 import '../components/slick';
 import '../components/scroll';
 import '../components/flatpickr';
 initUpdateNavbarOnScroll()
+
+// const inputs = document.querySelectorAll('.form-control')
+// console.log(inputs)
+// $('.send-button').on('click', this, function() {
+//   event.preventDefault()
+// })

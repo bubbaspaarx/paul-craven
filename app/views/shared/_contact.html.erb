@@ -5,15 +5,16 @@
         <h2 data-aos="flip-left" data-aos-duration="2000">Contact Me</h2>
       </div>
       <div class="col-xs-12 col-sm-4 col-sm-offset-1">
-        <%= simple_form_for(resource_name, url: "/message") do |f| %>
-        <%= f.input :name, required: false, label: false, placeholder: "Your Name"  %>
-        <%= f.input :email, required: false, label: false, placeholder: "Email"  %>
-        <%= f.input :phone_number, required: false, label: false, placeholder: "Contact Number"  %>
-        <%= f.input :date, required: false, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date"  %>
+        <%= simple_form_for(resource, as: :message, url: "/message") do |f| %>
+        <%= f.input :name, label: false, placeholder: "Your Name" %>
+        <%= f.error_notification %>
+        <%= f.input :email, label: false, placeholder: "Email" %>
+        <%= f.input :phone_number, label: false, placeholder: "Contact Number" %>
+        <%= f.input :date, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date" %>
       </div>
       <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-        <%= f.input :body, required: false, label: false, as: :text,  placeholder: "Event Info"  %>
-        <%= f.button :submit, "Send" %>
+        <%= f.input :body, required: "", label: false, as: :text,  placeholder: "Event Info" %>
+        <%= f.button :submit, "Send", class: 'send-button' %>
         <% end %>
       </div>
     </div>

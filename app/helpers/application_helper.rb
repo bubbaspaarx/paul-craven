@@ -4,6 +4,6 @@ module ApplicationHelper
   end
 
   def resource
-    @message ||= Message.new
+    @resource ||= Message.new
   end
 end
