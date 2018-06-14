@@ -10,4 +10,5 @@ AOS.init();
 import '../components/tabs';
 import '../components/slick';
 import '../components/scroll';
+import '../components/flatpickr';
 initUpdateNavbarOnScroll()
