@@ -11,19 +11,21 @@
 }
 
 .videos {
-display: block;
-margin: 30px auto;
-margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .slick-prev,
 .slick-next {
-  // left: 0px !important;
-  // right: 0px !important;
+  height: auto;
+  width: auto;
   &:before {
     font-size: 38px !important;
     color: $brand-primary !important;
   }
+}
+
+.slick-prev {
+  left: -45px !important;
 }
 
 #slick-slide-control00:before {

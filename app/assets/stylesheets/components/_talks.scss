@@ -26,3 +26,13 @@
 .talk-content {
   margin-top: 30px;
 }
+
+@media (max-width: 576px) {
+  .talk-tabs {
+   flex-direction: column;
+ }
+ .talk-tab a {
+  margin-top: 8px;
+  width: 66vw;
+ }
+}

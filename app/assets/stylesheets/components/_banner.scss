@@ -28,23 +28,35 @@
   position: absolute;
   left: 50%;
   z-index: 15;
-  width: 30%;
+  width: 50%;
   margin-left: -30%;
   top: 128px;
   top: 22%;
 }
 .book-btn {
-  padding: 9px 78px;
+  padding: 9px 20px;
+  width: auto;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 4px;
   transition: background-color ease 0.5s;
   margin-top: 16px;
+  animation: glow 3s infinite;
   &:hover {
     background-color: rgb(163, 193, 173);
     color: #012146;
     border: 1px solid #111;
+    content: "Too late!"
   }
+  &:focus {
+    outline-width: 0px;
+  }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0px 0px 9px #111 }
+  50% { box-shadow: 0px 0px 40px red }
+  100% { box-shadow: 0px 0px 9px #111 }
 }
 
 .arrow-container {
@@ -171,3 +183,20 @@ now override the 3.3 new styles for modern browsers & apply opacity
   }
 }
 
+@media (max-width: 576px) {
+  .banner-content {
+    & h2 {
+      font-size: 26px;
+    }
+    & h1 {
+      font-size: 42px;
+    }
+  }
+  .book-btn {
+    width: 120%;
+    padding: 10px 16px;
+  }
+  .navbar-sparks-brand {
+    height: 80px;
+  }
+}
