@@ -11,6 +11,7 @@
         <%= f.input :name, label: false, placeholder: "Your Name", required: true %>
         <%= f.input :email, label: false, placeholder: "Email", required: true %>
         <%= f.input :phone_number, label: false, placeholder: "Contact Number", required: true %>
+        <p class="hidden-md form-date">Event Date</p>
         <%= f.input :date, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date", required: true %>
         <%= f.input :body, required: "", label: false, as: :text,  placeholder: "Event Info", required: true %>
         <%= f.button :submit, "Send", class: 'send-button' %>
