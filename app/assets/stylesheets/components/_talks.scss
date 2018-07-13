@@ -34,5 +34,30 @@
  .talk-tab a {
   margin-top: 8px;
   width: 66vw;
- }
+}
+}
+
+.talk-photo {
+  width: 60%;
+  height: 486px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  background-position: 50% 29%;
+}
+
+.talk-content {
+  margin-bottom: 30px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.talk-book-btn {
+  background-color: transparent;
+  border: 1px solid #012146;
+  color: #012146;
+  padding: 13px 43px;
+  font-size: 14px;
 }

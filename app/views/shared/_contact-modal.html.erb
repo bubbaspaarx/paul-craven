@@ -4,7 +4,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Let's Talk</h4>
+        <h4 class="modal-title" id="myModalLabel">How can I help?</h4>
       </div>
       <div class="modal-body">
         <%= simple_form_for(resource, as: :message, url: "/message") do |f| %>
@@ -13,7 +13,7 @@
         <%= f.input :phone_number, label: false, placeholder: "Contact Number", required: true %>
         <p class="hidden-md form-date">Event Date</p>
         <%= f.input :date, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date", required: true %>
-        <%= f.input :body, required: "", label: false, as: :text,  placeholder: "Event Info", required: true %>
+        <%= f.input :body, required: "", label: false, as: :text,  placeholder: "Message for Paul", required: true %>
         <%= f.button :submit, "Send", class: 'send-button' %>
         <% end %>
       </div>

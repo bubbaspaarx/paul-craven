@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
     if @message.valid?
       MessageMailer.email_contact(@message).deliver_now
       MessageMailer.email_enquiry(@message).deliver_now
-      flash[:notice] = "We have received your message and will be in touch soon!"
+      flash[:notice] = "Thank you! I will be in touch soon!"
       redirect_to root_path
     else
       flash[:alert] = "There was an error sending your message. Please try again."

@@ -8,9 +8,9 @@
   <div class="navbar-sparks-right hidden-xs hidden-sm">
 
     <!-- Links -->
-    <%= link_to "Home", root_path(anchor: "home"), class: "navbar-sparks-item navbar-sparks-link"%>
-    <%= link_to "About", root_path(controller: "pages", anchor: "about"), class: "navbar-sparks-item navbar-sparks-link"%>
-    <%= link_to "Videos", root_path(anchor: "videos"), class: "navbar-sparks-item navbar-sparks-link"%>
+    <%= link_to "Home", root_path, class: "navbar-sparks-item navbar-sparks-link"%>
+    <%= link_to "About", "/#about", class: "navbar-sparks-item navbar-sparks-link"%>
+    <%= link_to "Videos", root_url(anchor: "videos"), class: "navbar-sparks-item navbar-sparks-link"%>
     <%= link_to "Talks", root_path(anchor: "talks"), class: "navbar-sparks-item navbar-sparks-link" %>
     <%= link_to "Coaching", root_path(anchor: "coaching"), class: "navbar-sparks-item navbar-sparks-link" %>
     <%= link_to "Testimonials", root_path(anchor: "testimonial"), class: "navbar-sparks-item navbar-sparks-link" %>

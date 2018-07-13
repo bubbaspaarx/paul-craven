@@ -7,4 +7,29 @@
   margin-top: 50px;
   text-align: center;
   color: $brand-primary2;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  & h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.sparks-content {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  & ul {
+    list-style: none;
+  }
+  & span {
+    margin-right: 24px;
+  }
+}
+
+.magic-image {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
 }

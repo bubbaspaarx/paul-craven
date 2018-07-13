@@ -6,6 +6,6 @@ class MessageMailer < ApplicationMailer
 
   def email_enquiry(message)
     @message = message
-    mail(to: "edd_sparks@hotmail.com", subject: "Website Enquiry")
+    mail(to: "paul@paulcraven.com", subject: "Website Enquiry")
   end
 end

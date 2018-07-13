@@ -1,20 +1,25 @@
 <%= render 'shared/contact-modal' %>
+<%= render 'shared/dont-modal' %>
 <div id="home" class="second-banner">
   <%= render 'shared/navbar' %>
   <div id="carousel-example-generic" class="carousel slide banner carousel-fade" data-ride="carousel" data-interval="6000" data-pause="null">
     <div class="banner-content">
       <h1>Paul Craven</h1>
-      <h2>Behavioural Economics Expert &</h2>
-      <h2>Professional Speaker</h2>
-      <button class="book-btn" data-toggle="modal" data-target="#myModal">Don't click here</button>
+      <h4>Behavioural Economics Expert</h4>
+
+      <h3>Professional Speaker</h3>
+      <h3>Masterclasses</h3>
+      <h3>Coaching & Consultancy</h3>
+      <button class="book-btn-green" data-toggle="modal" data-target="#myModal">Contact Me</button>
+      <button class="book-btn" data-toggle="modal" data-target="#dontModal">Don't click Here</button>
     </div>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1528372926/Paul-Craven-speaking-1024x682.jpg" %>');">
+      <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1531414909/paul-craven/_64A3796_2.jpg" %>');">
       </div>
-      <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1528372926/Paul-Craven-speaking-1024x682.jpg" %>');">
-      </div>
-      <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1528372926/Paul-Craven-speaking-1024x682.jpg" %>');">
+<!--       <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%#= image_path "https://res.cloudinary.com/montycat/image/upload/v1531411164/paul-craven/pc-1.jpg" %>');">
+      </div> -->
+      <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "https://res.cloudinary.com/montycat/image/upload/v1531411309/paul-craven/paul_craven_DSC_0627_1.jpg" %>');">
       </div>
     </div>
   </div>
