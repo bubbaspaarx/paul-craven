@@ -24,7 +24,7 @@ $(".testimonial-carousel").slick({
   speed: 600,
   autoplay: true,
   arrows: false,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 12000,
   slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [

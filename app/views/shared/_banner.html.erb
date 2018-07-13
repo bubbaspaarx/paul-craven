@@ -1,33 +1,41 @@
 <%= render 'shared/contact-modal' %>
 <%= render 'shared/dont-modal' %>
-<div id="home" class="second-banner">
+<div id="home" class="second-banner banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1531414909/paul-craven/_64A3796_2.jpg" %>')">
   <%= render 'shared/navbar' %>
-  <div id="carousel-example-generic" class="carousel slide banner carousel-fade" data-ride="carousel" data-interval="6000" data-pause="null">
-    <div class="banner-content">
-      <h1>Paul Craven</h1>
-      <h4>Behavioural Economics Expert</h4>
 
-      <h3>Professional Speaker</h3>
-      <h3>Masterclasses</h3>
-      <h3>Coaching & Consultancy</h3>
-      <button class="book-btn-green" data-toggle="modal" data-target="#myModal">Contact Me</button>
-      <button class="book-btn" data-toggle="modal" data-target="#dontModal">Don't click Here</button>
+  <div class="banner-content">
+    <h1>Paul Craven</h1>
+    <h4 id="behav">Behavioural Economics Expert</h4>
+    <h4>Professional Speaker</h4>
+    <h4>Masterclass Coach</h4>
+    <button class="book-btn-green" data-toggle="modal" data-target="#myModal">Contact Me</button>
+    <button class="book-btn" data-toggle="modal" data-target="#dontModal">Don't Click Here</button>
+    <div class="head-test">
+      <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" data-pause="null">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <p>"Paul is an accomplished presenter who never disappoints and if you need someone to speak or coach on Behavioural Economics, I cannot recommend him highly enough.”</p>
+            <p><em class="small-text">Frank Dolan, Chartered FCSI Partner & Chartered Wealth Manager Laurence Milbrook & Co</em></p>
+          </div>
+          <div class="item">
+            <p>"He has the rare ability to both entertain and educate, making the audience question previously held assumptions."</p>
+            <p><em class="small-text">Alex Beveridge, Director the European Investor Institute</em></p>
+          </div>
+          <div class="item">
+            <p>"Paul has an all-too-rare mixture of erudition, wit and practical ideas."</p>
+            <p><em class="small-text">Rory Sutherland - Vice Chairman, Ogilvy & Mather UK</em></p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "http://res.cloudinary.com/montycat/image/upload/v1531414909/paul-craven/_64A3796_2.jpg" %>');">
-      </div>
-<!--       <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%#= image_path "https://res.cloudinary.com/montycat/image/upload/v1531411164/paul-craven/pc-1.jpg" %>');">
-      </div> -->
-      <div class="item banner" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path "https://res.cloudinary.com/montycat/image/upload/v1531411309/paul-craven/paul_craven_DSC_0627_1.jpg" %>');">
-      </div>
+  </div>
+</div>
+<div class="arrow-container">
+  <a href="#about">
+    <div class="down-arrow">
+      <i class="fa fa-angle-down"></i>
     </div>
-  </div>
-  <div class="arrow-container">
-    <a href="#about">
-      <div class="down-arrow">
-        <i class="fa fa-angle-down"></i>
-      </div>
-    </a>
-  </div>
+  </a>
+</div>
 </div>

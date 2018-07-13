@@ -13,6 +13,7 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'sass-rails'
 gem 'simple_form'
+gem 'twitter'
 gem 'uglifier'
 gem 'webpacker'
 
