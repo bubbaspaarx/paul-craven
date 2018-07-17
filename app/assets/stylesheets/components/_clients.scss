@@ -1,0 +1,29 @@
+.clients-wrapper {
+  background-image: linear-gradient(to right, #012147, #033065);
+  height: auto;
+  min-height: 400px;
+}
+
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.clients-title {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: $brand-primary;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-layers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

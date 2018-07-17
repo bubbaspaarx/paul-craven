@@ -9,8 +9,8 @@
         <%= f.input :name, label: false, placeholder: "Your Name", required: true %>
         <%= f.input :email, label: false, placeholder: "Email", required: true %>
         <%= f.input :phone_number, label: false, placeholder: "Contact Number", required: true %>
-        <p class="hidden-md form-date">Event Date</p>
-        <%= f.input :date, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date", required: true %>
+        <!-- <p class="hidden-md form-date">Event Date</p> -->
+        <%#= f.input :date, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date", required: true %>
       </div>
       <div class="col-xs-12 col-sm-4 col-sm-offset-2">
         <%= f.input :body, required: "", label: false, as: :text,  placeholder: "Message for Paul", required: true %>

@@ -3,10 +3,10 @@
   background-color: #111;
   height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background-size: cover !important;
+  background-size: 150%;
   display: flex;
   justify-content: center;
-  background-position: 50% 50%;
+  background-position: 20% 50%;
   input{
     color: black;
   }
@@ -38,7 +38,7 @@
 }
 .book-btn {
   padding: 9px 20px;
-  width: auto;
+  width: 178.05px;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -59,7 +59,7 @@
 .book-btn-green {
   margin-right: 20px;
   padding: 9px 20px;
-  width: auto;
+  width: 178.05px;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -210,24 +210,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-  }
-}
-
-@media (max-width: 576px) {
-  .banner-content {
-    & h2 {
-      font-size: 26px;
-    }
-    & h1 {
-      font-size: 42px;
-    }
-  }
-  .book-btn {
-    width: 120%;
-    padding: 10px 16px;
-  }
-  .navbar-sparks-brand {
-    height: 80px;
   }
 }
 

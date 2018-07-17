@@ -1,0 +1,23 @@
+@media (max-width: 576px) {
+  .banner-content {
+    & h2 {
+      font-size: 26px;
+    }
+    & h1 {
+      font-size: 42px;
+    }
+  }
+  .book-btn {
+    padding: 10px 16px;
+  }
+  .navbar-sparks-brand {
+    height: 80px;
+  }
+  .talk-tabs {
+   flex-direction: column;
+  }
+ .talk-tab a {
+  margin-top: 8px;
+  width: 66vw;
+  }
+}

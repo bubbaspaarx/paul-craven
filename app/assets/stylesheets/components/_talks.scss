@@ -27,23 +27,12 @@
   margin-top: 30px;
 }
 
-@media (max-width: 576px) {
-  .talk-tabs {
-   flex-direction: column;
- }
- .talk-tab a {
-  margin-top: 8px;
-  width: 66vw;
-}
-}
 
 .talk-photo {
   width: 60%;
   height: 486px;
   background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  margin: 40px auto;
   background-position: 50% 29%;
 }
 
