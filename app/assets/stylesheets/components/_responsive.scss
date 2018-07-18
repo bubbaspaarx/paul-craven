@@ -1,3 +1,42 @@
+@media (max-width: 1080px) {
+  .banner {
+    background-size: cover;
+  }
+  .head-test {
+    width: 100%;
+  }
+  .about-title {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .talk-content {
+    width: 100%;
+    padding: 0px 30px;
+  }
+  .talk-photo {
+    width: 90%;
+  }
+  .clients-container {
+    flex-direction: row;
+  }
+  .client-layers {
+    flex-direction: column;
+    height: 600px;
+  }
+}
+
+@media (max-width: 840px) {
+  .banner {
+    background-position: 40% 50%;
+  }
+  .talk-photo {
+    width: 100%;
+    height: 400px;
+  }
+
+}
+
+
 @media (max-width: 576px) {
   .banner-content {
     & h2 {
@@ -15,9 +54,25 @@
   }
   .talk-tabs {
    flex-direction: column;
-  }
+ }
  .talk-tab a {
   margin-top: 8px;
   width: 66vw;
+}
+.jastrow {
+  height: 246px;
+}
+.sparks-content {
+  flex-direction: column;
+}
+.bio {
+  padding: 0px 20px;
+}
+}
+
+
+@media (max-width: 463px) {
+  .jastrow {
+    height: 175px;
   }
 }

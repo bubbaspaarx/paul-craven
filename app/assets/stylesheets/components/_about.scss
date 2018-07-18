@@ -1,4 +1,9 @@
+.container-fluid {
+  overflow-x: hidden;
+}
+
 .description-wrapper {
+  overflow-x: hidden;
   height: auto;
   min-height: 500px;
 }
