@@ -27,17 +27,22 @@
 
 @media (max-width: 840px) {
   .banner {
-    background-position: 40% 50%;
+    background-position: 20% 50%;
   }
   .talk-photo {
     width: 100%;
     height: 400px;
   }
-
+  .banner p {
+    font-size: 14px;
+  }
 }
 
 
 @media (max-width: 576px) {
+  .banner {
+    background-position: 30% 50%;
+  }
   .banner-content {
     & h2 {
       font-size: 26px;
@@ -72,7 +77,36 @@
 
 
 @media (max-width: 463px) {
+  .banner {
+    background-position: 40% 50%;
+  }
   .jastrow {
     height: 175px;
+  }
+  .banner-content {
+    & h4 {
+      font-size: 18px;
+    }
+    & h1 {
+      font-size: 30px;
+    }
+  }
+  .book-btn-green {
+    font-size: 14px;
+  }
+  .book-btn {
+    font-size: 14px;
+  }
+  .head-test {
+    display: none;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .jastrow {
+    height: 150px;
   }
 }
