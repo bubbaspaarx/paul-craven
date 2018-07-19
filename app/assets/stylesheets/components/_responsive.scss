@@ -38,6 +38,21 @@
   }
 }
 
+@media (max-width: 767px) {
+  .slick-dots {
+    width: 50% !important;
+    left: 25% !important;
+  }
+  .slick-next {
+    right: 15% !important;
+    top: 99% !important;
+  }
+  .slick-prev {
+    left: 15% !important;
+    top: 99% !important;
+  }
+}
+
 
 @media (max-width: 576px) {
   .banner {

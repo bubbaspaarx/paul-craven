@@ -16,8 +16,8 @@
 
 .slick-prev,
 .slick-next {
-  height: auto;
-  width: auto;
+  height: auto !important;
+  width: auto !important;
   &:before {
     font-size: 38px !important;
     color: $brand-primary !important;
