@@ -44,12 +44,13 @@
     left: 25% !important;
   }
   .slick-next {
-    right: 15% !important;
-    top: 99% !important;
+    right: 10% !important;
+    top: 100% !important;
   }
   .slick-prev {
-    left: 15% !important;
-    top: 99% !important;
+    left: 10% !important;
+    top: 100% !important;
+    z-index: 10;
   }
 }
 
