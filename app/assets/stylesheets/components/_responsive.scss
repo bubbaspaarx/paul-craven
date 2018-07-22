@@ -74,21 +74,22 @@
     height: 80px;
   }
   .talk-tabs {
-   flex-direction: column;
- }
- .talk-tab a {
-  margin-top: 8px;
-  width: 66vw;
-}
-.jastrow {
-  height: 246px;
-}
-.sparks-content {
-  flex-direction: column;
-}
-.bio {
-  padding: 0px 20px;
-}
+    flex-direction: column;
+  }
+  .talk-tab a {
+    margin-top: 8px;
+    width: 66vw;
+  }
+  .jastrow {
+    height: 246px;
+  }
+  .sparks-content {
+    flex-direction: column;
+  }
+  .bio {
+    padding: 0px 20px;
+  }
+
 }
 
 
