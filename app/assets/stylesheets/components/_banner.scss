@@ -11,6 +11,11 @@
     color: black;
   }
 }
+.banner2 {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .banner h1 {
   font-size: 50px;
   font-weight: bold;
@@ -25,6 +30,7 @@
 }
 
 .banner-content {
+  color: #fff;
   position: absolute;
   left: 50%;
   z-index: 15;
@@ -216,6 +222,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .head-test {
   margin-top: 35px;
   width: 60%;
+  & p {
+    color: #fff;
+  }
 }
 
 .small-text {

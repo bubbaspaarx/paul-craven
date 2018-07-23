@@ -2,6 +2,9 @@
   .banner {
     background-size: cover;
   }
+  .banner2 {
+  background-position: 60% 50% !important;
+}
   .head-test {
     width: 100%;
   }
@@ -28,6 +31,9 @@
 @media (max-width: 840px) {
   .banner {
     background-position: 20% 50%;
+  }
+  .banner.banner2 {
+  background-position: 70% 50% !important;
   }
   .talk-photo {
     width: 100%;
