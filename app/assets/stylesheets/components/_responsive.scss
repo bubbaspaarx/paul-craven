@@ -3,8 +3,8 @@
     background-size: cover;
   }
   .banner2 {
-  background-position: 60% 50% !important;
-}
+    background-position: 60% 50% !important;
+  }
   .head-test {
     width: 100%;
   }
@@ -33,7 +33,7 @@
     background-position: 20% 50%;
   }
   .banner.banner2 {
-  background-position: 70% 50% !important;
+    background-position: 70% 50% !important;
   }
   .talk-photo {
     width: 100%;
@@ -66,7 +66,7 @@
     background-position: 30% 50%;
   }
   .banner-content {
-    & h2 {
+    & h4 {
       font-size: 26px;
     }
     & h1 {
@@ -134,5 +134,62 @@
   }
   .client-image img {
     width: 80px;
+  }
+}
+
+@media (max-height: 400px) {
+  .arrow-container {
+    display: none;
+  }
+  .banner {
+    background-size: 150%;
+    background-position: 20% 40%;
+  }
+  .banner-content {
+    width: 80%;
+    & h1 {
+      font-size: 30px;
+    }
+    &  h4 {
+      font-size: 18px;
+    }
+  }
+  .book-btn-green {
+    font-size: 14px;
+    padding: 5px 20px;
+    width: 150px;
+  }
+  .book-btn {
+    font-size: 14px;
+    padding: 5px 20px;
+    width: 150px;
+  }
+  .navbar-sparks-brand {
+    height: 50px;
+  }
+  .head-test {
+    display: none;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .vid-resp {
+    width: 57%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  .talk-photo {
+    width: 100%;
+    height: 235px;
   }
 }
