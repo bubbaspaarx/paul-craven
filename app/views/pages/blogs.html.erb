@@ -1,11 +1,16 @@
 <%= render 'shared/navbar2' %>
 <div class="blogs-wrapper">
-  <div class="blogs-title">
-    <h1>My Posts</h1>
-  </div>
-  <div class="blog-wrapper">
-    <div class="blogs-main">
-      <%= render 'shared/blogs' %>
+  <a class="twitter-timeline" data-width="500" data-height="700" data-theme="dark" data-link-color="#A3C1AD" href="https://twitter.com/CravenPartners?ref_src=twsrc%5Etfw">Tweets by CravenPartners</a>
+  <div class="blog">
+    <div class="blogs-title">
+      <h1>My Posts</h1>
+    </div>
+    <div class="blog-wrapper">
+      <div class="blogs-main">
+        <%= render 'shared/blogs' %>
+      </div>
     </div>
   </div>
 </div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

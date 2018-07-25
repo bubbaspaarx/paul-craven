@@ -1,3 +1,8 @@
+.blog {
+  width: 80%;
+  float: right;
+}
+
 .blogs-wrapper {
   overflow-x: hidden;
   height: 100%;
@@ -8,7 +13,6 @@
 .blog-wrapper {
   display: flex;
   justify-content: center;
-
 }
 
 .blogs-main {
@@ -19,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 160px;
   color: $brand-primary;
 }
 
@@ -40,10 +44,9 @@
 }
 
 .blog-image {
-  position: 50% 50%;
+  background-position: 50% 50%;
   background-size: cover;
   height: 200px;
-  width: 100%;
 }
 
 .blog-content {
@@ -68,4 +71,10 @@
     background-color: $brand-primary;
     color: $brand-primary2;
   }
+}
+
+.blogs-wrapper iframe {
+  position: fixed !important;
+  width: 400px !important;
+  height: 100vh !important;
 }
