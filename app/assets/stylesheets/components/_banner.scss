@@ -228,5 +228,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 .small-text {
-  font-size: 12px;
+  font-size: 15px;
+  color: $brand-primary;
+  letter-spacing: 1px;
 }
