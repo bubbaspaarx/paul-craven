@@ -26,6 +26,33 @@
     flex-direction: column;
     height: 600px;
   }
+    .blogs-title {
+    height: 60px;
+  }
+
+  .blog-row {
+    height: 250px;
+  }
+
+  .blog-card {
+    height: 100%;
+  }
+
+  .blog-image {
+    height: 100%;
+  }
+
+  .blog-title a h3 {
+    font-size: 20px;
+    margin-top: 0px;
+  }
+  .blog-card-det {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: start;
+  }
 }
 
 @media (max-width: 840px) {
@@ -41,6 +68,10 @@
   }
   .banner p {
     font-size: 14px;
+  }
+  .blogs-wrapper iframe {
+    position: fixed !important;
+    width: 300px !important;
   }
 }
 
@@ -95,6 +126,22 @@
   .bio {
     padding: 0px 20px;
   }
+  .blog {
+    width: 100%;
+    float: none;
+  }
+  .blogs-wrapper iframe {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 280px !important;
+    height: 75vh !important;
+  }
+  .blogs-wrapper {
+    padding-top: 93px;
+  }
+  .blogs-title {
+    height: 70px;
+  }
 
 }
 
@@ -145,7 +192,7 @@
   }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 420px) {
   .arrow-container {
     display: none;
   }
@@ -199,5 +246,20 @@
   .talk-photo {
     width: 100%;
     height: 235px;
+  }
+  .blogs-wrapper {
+    padding: 65px 35px;
+  }
+
+  .blog {
+    width: 100%;
+    float: none;
+  }
+
+  .blogs-wrapper iframe {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 280px !important;
+    height: 77vh !important;
   }
 }

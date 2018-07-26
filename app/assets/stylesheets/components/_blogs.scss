@@ -1,5 +1,5 @@
 .blog {
-  width: 80%;
+  width: 65%;
   float: right;
 }
 
@@ -7,7 +7,7 @@
   overflow-x: hidden;
   height: 100%;
   background-image: linear-gradient(to right, $brand-primary2, #033065);
-  margin-top: 75px;
+  padding-top: 120px;
 }
 
 .blog-wrapper {
@@ -23,8 +23,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 160px;
+  height: 100px;
   color: $brand-primary;
+}
+
+.blog-title {
+  & a h3 {
+    font-size: 28px;
+    margin-top: 0px;
+  }
 }
 
 .blog-detail {
