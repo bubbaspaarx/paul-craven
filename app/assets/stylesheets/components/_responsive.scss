@@ -26,7 +26,7 @@
     flex-direction: column;
     height: 600px;
   }
-    .blogs-title {
+  .blogs-title {
     height: 60px;
   }
 
@@ -52,6 +52,10 @@
     justify-content: space-around;
     height: 100%;
     align-items: start;
+  }
+  .blogs-wrapper iframe {
+    position: fixed !important;
+    width: 370px !important;
   }
 }
 
