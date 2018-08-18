@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new message_params
-    if @message.valid?
+    if @message.valid? && verify_recaptcha!(model: @message)
       MessageMailer.email_contact(@message).deliver_now
       MessageMailer.email_enquiry(@message).deliver_now
       flash[:notice] = "Thank you! I will be in touch soon!"

@@ -13,9 +13,6 @@ import '../components/slick';
 import '../components/scroll';
 import '../components/flatpickr';
 initUpdateNavbarOnScroll()
+import { enableBtn } from '../components/recaptcha';
+window.enableBtn = enableBtn
 
-// const inputs = document.querySelectorAll('.form-control')
-// console.log(inputs)
-// $('.send-button').on('click', this, function() {
-//   event.preventDefault()
-// })
