@@ -3,7 +3,7 @@ Rails.application.configure do
   config.webpacker.check_yarn_integrity = false
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "paul-craven.herokuapp.com" }
+  config.action_mailer.default_url_options = { host: "www.paulcraven.com" }
 
   # Settings specified here will take precedence over those in config/application.rb.
 
