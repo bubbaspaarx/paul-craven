@@ -4,5 +4,8 @@ Rails.application.routes.draw do
   get 'blogs', to: 'pages#blogs'
 
   post 'message', to: 'messages#create', as: 'new_message'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  resources :sitemaps, :only => :show
+  get "sitemap" => "sitemaps#show"
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

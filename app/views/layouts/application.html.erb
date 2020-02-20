@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <title>Paul Craven Partners Ltd</title>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta property="og:image" content='<%= image_tag "pc-og.png" %>'>
-    <meta property="og:url" content="https://www.paulcraven.com">
-    <meta property="og:title" content="Paul Craven Partners Ltd">
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Paul Craven is a London-based investment specialist and public speaker in the area of Behavioural Economics and founder of Paul Craven Partners Ltd.">
-    <meta property="og:site_name" content="Paul Craven - Behavioural Economics Expert" />
+  <title>Paul Craven - Behavioural Economics Expert Speaker</title>
+  <link rel="canonical" href="https://www.paulcraven.com/">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta property="og:image" content="https://res.cloudinary.com/montycat/image/upload/v1580846835/paul-craven/pc-og.png">
+  <meta property="og:url" content="https://www.paulcraven.com">
+  <meta property="og:title" content="Paul Craven Partners Ltd">
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Paul Craven is a London-based investment specialist and public speaker in the area of Behavioural Economics and founder of Paul Craven Partners Ltd.">
+  <meta property="og:site_name" content="Paul Craven - Behavioural Economics Expert" />
+
+  <!-- ADD METATAGS -->
+  <meta name="description" content="Book the fascinating behavioural economics speaker Paul Craven for your next event. A veteran of Goldman Sachs, Schroders and PIMCO, Paul is a leading speaker on behavioural economics who perfectly marrys investments, psychology and a little bit of magic in to every talk.">
+
+  <meta name="keywords" content="speaker, keynote speaker, behavioural economics expert, behavioural economics, expert speaker, master of ceromonies, paul craven, goldman sachs, schroders, tedx talk, ted talk, rory sutherland, ogilvy, nudgestock, investments, magic, magician, psychology, decision making, election campaigns,">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="content-language" content="en" />
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-  </head>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+
   <body>
+    <%= stylesheet_pack_tag 'application' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'  %>
   </body>
-  </html>
+</head>
+</html>

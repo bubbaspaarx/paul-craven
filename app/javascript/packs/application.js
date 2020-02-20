@@ -1,3 +1,7 @@
+require("@rails/ujs").start()
+require("turbolinks").start()
+require("@rails/activestorage").start()
+
 import "bootstrap";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -15,4 +19,4 @@ import '../components/flatpickr';
 initUpdateNavbarOnScroll()
 import { enableBtn } from '../components/recaptcha';
 window.enableBtn = enableBtn
-
+console.log("logss")

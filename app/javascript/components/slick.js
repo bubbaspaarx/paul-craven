@@ -2,8 +2,8 @@ $(".video-carousel").slick({
   dots: true,
   infinite: false,
   speed: 600,
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  slidesToShow: 4,
+  slidesToScroll: 4,
   responsive: [
     {
       breakpoint: 1024,

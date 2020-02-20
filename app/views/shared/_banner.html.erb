@@ -3,25 +3,25 @@
 <div id="home" class="second-banner">
  <div id="carousel-example-generic2" class="carousel slide banner carousel-fade" data-ride="carousel" data-interval="5000" data-pause="null">
    <div class="carousel-inner" role="listbox">
-    <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "https://res.cloudinary.com/montycat/image/upload/q_auto:low/v1531414909/paul-craven/_64A3796_2.jpg" %>');">
+    <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url('main-1.jpg') %>)">
     </div>
-    <div class="item banner banner2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "https://res.cloudinary.com/montycat/image/upload/v1532355636/spker/Screen_Shot_2018-07-19_at_12.14.21.png" %>');">
+    <div class="item banner banner2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url('main-2.jpg') %>)">
     </div>
   </div>
 </div>
 
 <%= render 'shared/navbar' %>
 
-<div class="banner-content">
-  <h1>Paul Craven</h1>
+<div class="banner-content" itemscope>
+  <h1 itemprop="name">Paul Craven</h1>
   <%= link_to "#about" do %>
-  <h4 id="behav">Behavioural Economics Expert</h4>
+  <h4 id="behav" itemprop="jobTitle">Behavioural Economics Expert</h4>
   <% end %>
   <%= link_to "#talks" do %>
-  <h4>Professional Speaker</h4>
+  <h4 itemprop="hasOccupation">Professional Speaker</h4>
   <% end %>
   <%= link_to "#coaching" do %>
-  <h4>Masterclass Coach</h4>
+  <h4 itemprop="hasOccupation">Masterclass Coach</h4>
   <% end %>
   <button class="book-btn-green" data-toggle="modal" data-target="#myModal">Contact Me</button>
   <button class="book-btn" data-toggle="modal" data-target="#dontModal">Don't Click Here</button>

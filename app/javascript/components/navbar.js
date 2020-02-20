@@ -9,7 +9,7 @@ function initUpdateNavbarOnScroll() {
       navbar.classList.remove('navbar-white');
       logo.classList.remove('logo-small')
     }
-  });
+  }, {passive: true});
 }
 
 export { initUpdateNavbarOnScroll };

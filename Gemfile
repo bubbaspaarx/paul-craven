@@ -1,23 +1,25 @@
 source 'https://rubygems.org'
-ruby '2.4.3'
+ruby '2.6.4'
 
 gem 'autoprefixer-rails'
-gem 'bootstrap-sass', '~> 3.3'
 gem 'cloudinary'
+gem 'bootsnap', '>= 1.4.2', require: false
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'figaro'
-gem 'font-awesome-sass', '~> 5.0.9'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', '5.1.6'
+gem 'sassc-rails'
+gem 'rails', '~> 6.0.0.rcl'
+gem 'bootstrap-sass', '~> 3.3'
+gem 'font-awesome-sass', '~> 5.11.2'
 gem "recaptcha"
 gem 'redis'
-gem 'sass-rails'
+gem 'sass-rails', '~> 5'
 gem 'simple_form'
 gem 'twitter'
 gem 'uglifier'
-gem 'webpacker'
+gem 'webpacker', '~> 4.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

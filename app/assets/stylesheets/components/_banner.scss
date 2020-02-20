@@ -197,14 +197,14 @@ now override the 3.3 new styles for modern browsers & apply opacity
 @media all and (transform-3d), (-webkit-transform-3d) {
   .carousel-fade .carousel-inner > .item.next,
   .carousel-fade .carousel-inner > .item.active.right {
-    transition: 4s;
+    transition: opacity 4s;
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   .carousel-fade .carousel-inner > .item.prev,
   .carousel-fade .carousel-inner > .item.active.left {
-    transition: 4s;
+    transition: opacity 4s;
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -212,7 +212,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
   .carousel-fade .carousel-inner > .item.next.left,
   .carousel-fade .carousel-inner > .item.prev.right,
   .carousel-fade .carousel-inner > .item.active {
-    transition: 4s;
+    transition: opacity 4s;
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
