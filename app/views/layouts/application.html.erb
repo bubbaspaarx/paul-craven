@@ -5,7 +5,7 @@
   <link rel="canonical" href="https://www.paulcraven.com/">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta property="og:image" content="https://res.cloudinary.com/montycat/image/upload/v1580846835/paul-craven/pc-og.png">
+  <meta property="og:image" content=<%= image_path("pc-og.png") %>>
   <meta property="og:url" content="https://www.paulcraven.com">
   <meta property="og:title" content="Paul Craven Partners Ltd">
   <meta property="og:type" content="website" />
@@ -20,7 +20,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="content-language" content="en" />
-
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Paul Craven",
+      "url": "http://www.paulcraven.com",
+      "sameAs": [
+      "https://www.facebook.com/paulcravenpartners/",
+      "https://twitter.com/cravenpartners",
+      "https://www.linkedin.com/in/paul-craven-908bb212/"
+      ]
+    }
+  </script>
 
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
