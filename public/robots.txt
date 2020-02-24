@@ -1,1 +1,2 @@
+Sitemap: https://paulcraven.com/sitemap.xml
 User-agent: *
