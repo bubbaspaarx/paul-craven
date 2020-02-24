@@ -7,6 +7,9 @@ Rails.application.configure do
 
   # Settings specified here will take precedence over those in config/application.rb.
 
+  #asset compression
+  config.middleware.insert_after ActionDispatch::Static, Rack::Deflater
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
