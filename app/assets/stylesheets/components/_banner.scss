@@ -42,6 +42,32 @@
     color: $brand-primary;
   }
 }
+
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+.online {
+  margin-top: 16px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e25656;
+  font-family: 'Special Elite', cursive;
+  border: 1px #e25656;
+  border-radius: 2px;
+  padding: 6px 15px;
+  padding-top: 12px;
+  border-style: double;
+  margin-left: 20px;
+  min-width: 215px;
+  padding-left: 21px;
+  padding-right: 0px;
+  transform: rotate(-15deg);
+  border-style: dashed;
+}
+
 .book-btn {
   padding: 9px 20px;
   width: 178.05px;
@@ -63,6 +89,7 @@
 }
 
 .book-btn-green {
+  min-width: 171px;
   margin-right: 20px;
   padding: 9px 20px;
   width: 178.05px;

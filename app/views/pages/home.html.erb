@@ -1,5 +1,19 @@
 <%= render 'shared/banner' %>
 
+<% if Date.today < "30-05-2020".to_date %>
+<div id="covid">
+  <h3>COVID Notice</h3>
+  <p>Due to coronavirus I am offering my clients a range of new services to bring my talks to your audience remotely.</p>
+  <p>Live and pre-recorded;</p>
+
+    <ul>
+      <li>Talks</li>
+      <li>Webinars</li>
+      <li>Coaching</li>
+    </ul>  </div>
+</div>
+<% end %>
+
 <div id="about"></div>
 
 <%= render 'shared/about' %>

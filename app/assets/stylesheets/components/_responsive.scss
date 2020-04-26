@@ -97,6 +97,9 @@
 
 
 @media (max-width: 576px) {
+  .flex-div {
+    flex-direction: column;
+  }
   .banner {
     background-position: 30% 50%;
   }

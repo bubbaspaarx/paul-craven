@@ -13,6 +13,7 @@
 <%= render 'shared/navbar' %>
 
 <div class="banner-content" itemscope>
+  <div class="online">Now Online</div>
   <h1 itemprop="name">Paul Craven</h1>
   <%= link_to "#about" do %>
   <h4 id="behav" itemprop="jobTitle">Behavioural Economics Expert</h4>
@@ -23,8 +24,11 @@
   <%= link_to "#coaching" do %>
   <h4 itemprop="hasOccupation">Masterclass Coach</h4>
   <% end %>
+
   <button class="book-btn-green" data-toggle="modal" data-target="#myModal">Contact Me</button>
-  <button class="book-btn" data-toggle="modal" data-target="#dontModal">Don't Click Here</button>
+  <!-- <button class="book-btn" data-toggle="modal" data-target="#dontModal">Don't Click Here</button> -->
+
+
   <div class="head-test">
     <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" data-pause="null">
       <div class="carousel-inner" role="listbox">

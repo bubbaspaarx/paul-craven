@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+#covid {
+  min-height: 100px;
+  height: auto;
+  background-color: #57e295;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  // border-style: dotted;
+  // border-color: red;
+  position: relative;
+  z-index: 10;
+  & ul {
+    list-style: none;
+    width: fit-content;
+    margin: auto;
+    padding:0;
+  }
+}
