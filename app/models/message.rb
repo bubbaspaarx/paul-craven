@@ -4,6 +4,7 @@ class Message
       validates_with EmailValidator, _merge_attributes(attr_names)
     end
   end
+
   include ActiveModel::Model
   include ActiveModel::Validations
   attr_accessor :name, :email, :date, :phone_number, :body

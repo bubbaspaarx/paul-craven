@@ -14,8 +14,9 @@
       </div>
       <div class="col-xs-12 col-sm-4 col-sm-offset-2">
         <%= f.input :body, label: false, as: :text,  placeholder: "Message for Paul", required: true %>
+        <%= f.invisible_captcha :address %>
         <%= f.button :submit, "Send", class: 'send-button', id: "button1" %>
-        <%= recaptcha_tags %>
+        <%#= recaptcha_tags %>
       </div>
       <% end %>
     </div>

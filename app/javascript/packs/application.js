@@ -17,6 +17,6 @@ import '../components/slick';
 import '../components/scroll';
 import '../components/flatpickr';
 initUpdateNavbarOnScroll()
-import { enableBtn } from '../components/recaptcha';
-window.enableBtn = enableBtn
+// import { enableBtn } from '../components/recaptcha';
+// window.enableBtn = enableBtn
 console.log("logss")

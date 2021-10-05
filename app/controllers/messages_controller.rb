@@ -1,8 +1,9 @@
 class MessagesController < ApplicationController
-
+invisible_captcha only: [:create ], honeypot: :address
   def create
     @message = Message.new message_params
-    if @message.valid? && verify_recaptcha!(model: @message)
+    # if @message.valid? && verify_recaptcha!(model: @message)
+      if @message.valid?
       MessageMailer.email_contact(@message).deliver_now
       MessageMailer.email_enquiry(@message).deliver_now
       flash[:notice] = "Thank you! I will be in touch soon!"

@@ -109,9 +109,10 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    invisible_captcha (2.0.0)
+      rails (>= 5.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
-    json (2.5.1)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -186,8 +187,6 @@ GEM
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    recaptcha (5.8.1)
-      json
     redis (4.4.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
@@ -274,6 +273,7 @@ DEPENDENCIES
   dotenv-rails
   figaro
   font-awesome-sass (~> 5.11.2)
+  invisible_captcha
   jbuilder (~> 2.0)
   listen (~> 3.0.5)
   pg (~> 0.21)
@@ -281,7 +281,6 @@ DEPENDENCIES
   pry-rails
   puma
   rails (~> 6.0.0.rcl)
-  recaptcha
   redis
   sass-rails (~> 5)
   sassc-rails

@@ -13,7 +13,8 @@ gem 'sassc-rails'
 gem 'rails', '~> 6.0.0.rcl'
 gem 'bootstrap-sass', '~> 3.3'
 gem 'font-awesome-sass', '~> 5.11.2'
-gem "recaptcha"
+# gem "recaptcha"
+gem 'invisible_captcha'
 gem 'redis'
 gem 'sass-rails', '~> 5'
 gem 'simple_form'
