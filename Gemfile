@@ -1,35 +1,35 @@
 source 'https://rubygems.org'
-ruby '2.6.4'
+ruby '3.2.2'
 
 gem 'autoprefixer-rails'
 gem 'cloudinary'
-gem 'bootsnap', '>= 1.4.2', require: false
-gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'bootsnap'
+gem 'dotenv-rails'
 gem 'figaro'
-gem 'jbuilder', '~> 2.0'
-gem 'pg', '~> 0.21'
+gem 'jbuilder'
+gem 'pg'
 gem 'puma'
 gem 'sassc-rails'
-gem 'rails', '~> 6.0.0.rcl'
-gem 'bootstrap-sass', '~> 3.3'
-gem 'font-awesome-sass', '~> 5.11.2'
+gem 'rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 # gem "recaptcha"
 gem 'invisible_captcha'
 gem 'redis'
-gem 'sass-rails', '~> 5'
+gem 'sass-rails'
 gem 'simple_form'
 gem 'twitter'
 gem 'uglifier'
-gem 'webpacker', '~> 4.0'
+gem 'webpacker'
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console'
 end
 
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'listen', '~> 3.0.5'
+  gem 'listen'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
