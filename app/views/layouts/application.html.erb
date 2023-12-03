@@ -53,7 +53,7 @@
     <body>
       <%= render 'shared/flashes' %>
       <%= yield %>
-      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'  %>
+      <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-suppress-warning': 'true'  %>
     </body>
   </head>
 </html>

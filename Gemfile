@@ -10,7 +10,7 @@ gem 'jbuilder'
 gem 'pg'
 gem 'puma'
 gem 'sassc-rails'
-gem 'rails'
+gem 'rails', "6.1.7.6"
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 # gem "recaptcha"
