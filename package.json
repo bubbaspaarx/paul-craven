@@ -1,21 +1,53 @@
 {
-  "name": "paul-craven",
+  "name": "app",
   "private": true,
   "dependencies": {
-    "@rails/activestorage": "^6.0.0-alpha",
-    "@rails/ujs": "^6.0.0-alpha",
-    "@rails/webpacker": "4.2.2",
-    "aos": "^3.0.0-beta.6",
-    "bootstrap": "^3.4.1",
-    "flatpickr": "^4.5.0",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.1",
-    "postcss-cssnext": "^3.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@popperjs/core": "^2.11.8",
+    "@rails/actioncable": "latest",
+    "@rails/activestorage": "latest",
+    "@rails/ujs": "^7.1.2",
+    "@rails/webpacker": "^6.0.0-rc.6",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.2",
+    "flatpickr": "^4.6.13",
+    "jquery": "^3.7.1",
+    "mini-css-extract-plugin": "^2.7.6",
     "slick-carousel": "^1.8.1",
-    "turbolinks": "^5.2.0"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^4.8.0"
   },
   "version": "0.1.0",
+  "babel": {
+    "presets": [
+      "./node_modules/@rails/webpacker/package/babel/preset.js"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-object-rest-spread",
+      [
+        "@babel/plugin-transform-private-methods",
+        {
+          "loose": true
+        }
+      ],
+      [
+        "@babel/plugin-transform-private-property-in-object",
+        {
+          "loose": true
+        }
+      ]
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ],
   "devDependencies": {
-    "webpack-dev-server": "^3.10.3"
+    "@webpack-cli/serve": "^2.0.5",
+    "babel-plugin-macros": "^3.1.0",
+    "css-loader": "^6.8.1",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack-dev-server": "^4.15.1"
   }
 }

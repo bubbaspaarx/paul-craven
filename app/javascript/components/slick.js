@@ -1,4 +1,4 @@
-$(".video-carousel").slick({
+$('.video-carousel').slick({
   dots: true,
   infinite: false,
   speed: 600,
@@ -14,13 +14,13 @@ $(".video-carousel").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        arrows: true
-      }
-    }
-  ]
-});
+        arrows: true,
+      },
+    },
+  ],
+})
 
-$(".testimonial-carousel").slick({
+$('.testimonial-carousel').slick({
   dots: true,
   infinite: false,
   speed: 600,
@@ -37,8 +37,8 @@ $(".testimonial-carousel").slick({
         slidesToScroll: 1,
         infinite: true,
         dots: true,
-        arrows: false
-      }
-    }
-  ]
-});
+        arrows: false,
+      },
+    },
+  ],
+})
