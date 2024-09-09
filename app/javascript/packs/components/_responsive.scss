@@ -186,8 +186,19 @@
   .talk-book-btn {
     margin-bottom: 0px;
   }
-  .talk-photo {}
-  margin-bottom: 0px;
+  .talk-photo {
+    margin-bottom: 0px;
+  }
+  .client-image {
+    padding: 5px;
+  }
+  .client-image img {
+    width: 60px;
+  }
+  .magic-image {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -196,6 +207,7 @@
   }
   .client-image img {
     width: 80px;
+    padding: 5px;
   }
 }
 

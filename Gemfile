@@ -12,8 +12,6 @@ gem 'pg', '1.5.4'
 gem 'puma', '6.4.0'
 gem 'sassc-rails', '2.1.2'
 gem 'rails', '6.1.7.6'
-gem 'bootstrap-sass', '3.4.1'
-gem 'font-awesome-sass', '6.5.1'
 # gem "recaptcha"
 gem 'invisible_captcha', '2.1.0'
 gem 'redis', '5.0.8'

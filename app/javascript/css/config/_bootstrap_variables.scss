@@ -52,3 +52,7 @@ $border-radius-small: 2px;
 }
 
 // Override other variables below!
+
+i.fa.fa-bars.dropdown-toggle::after {
+  display: none;
+}

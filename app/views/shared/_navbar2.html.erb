@@ -1,12 +1,10 @@
-<div class="navbar-sparks2 navbar-fixed-top">
+<div class="navbar-sparks2 navbar fixed-top">
   <!-- Logo -->
   <%= link_to root_path do %>
     <%= image_tag "logo.png", class: "navbar-sparks-brand" %>
   <% end %>
-
   <!-- Right Navigation -->
   <div class="navbar-sparks-right hidden-xs hidden-sm">
-
     <!-- Links -->
     <%= link_to "Home", root_path, class: "navbar-sparks-item navbar-sparks-link"%>
     <%#= link_to "About", "/#about", class: "navbar-sparks-item navbar-sparks-link"%>
@@ -17,14 +15,13 @@
     <%#= link_to "Contact", root_path(anchor: "contact"), class: "navbar-sparks-item navbar-sparks-link" %>
     <%#= link_to "Blogs", blogs_path, class: "navbar-sparks-item navbar-sparks-link"  %>
   </div>
-
   <!-- Dropdown list appearing on mobile only -->
   <div class="navbar-sparks-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-sparks-dropdown-menu">
         <li><a href="#home">Home</a></li>
-<!--         <li><a href="#about">About</a></li>
+        <!--         <li><a href="#about">About</a></li>
         <li><a href="#videos">Videos</a></li>
         <li><a href="#talks">Talks</a></li>
         <li><a href="#coaching">Coaching</a></li>

@@ -1,52 +1,46 @@
 <%= render 'shared/contact-modal' %>
-<%= render 'shared/dont-modal' %>
 <div id="home" class="second-banner">
- <div id="carousel-example-generic2" class="carousel slide banner carousel-fade" data-ride="carousel" data-interval="5000" data-pause="null">
-   <div class="carousel-inner" role="listbox">
-    <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url('main-1.jpg') %>)">
-    </div>
-    <div class="item banner banner2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url('main-2.jpg') %>)">
-    </div>
-  </div>
-</div>
-
-<%= render 'shared/navbar' %>
-
-<div class="banner-content" itemscope>
-  <h1 itemprop="name">Paul Craven</h1>
-  <%= link_to "#about" do %>
-  <h4 id="behav" itemprop="jobTitle">Behavioural Economics Expert</h4>
-  <% end %>
-  <%= link_to "#talks" do %>
-  <h4 itemprop="hasOccupation">Professional Speaker</h4>
-  <% end %>
-  <%= link_to "#coaching" do %>
-  <h4 itemprop="hasOccupation">Masterclass Coach</h4>
-  <% end %>
-
-  <button class="book-btn-green" data-toggle="modal" data-target="#myModal">Contact Me</button>
-  <!-- <button class="book-btn" data-toggle="modal" data-target="#dontModal">Don't Click Here</button> -->
-
-  <div class="head-test">
-    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" data-pause="null">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <p>"<em>Paul is an accomplished presenter who never disappoints and if you need someone to speak or coach on Behavioural Economics, I cannot recommend him highly enough.</em>”</p>
-          <p><em class="small-text">Frank Dolan, Chartered FCSI Partner & Chartered Wealth Manager Laurence Milbrook & Co</em></p>
-        </div>
-        <div class="item">
-          <p>"<em>He has the rare ability to both entertain and educate, making the audience question previously held assumptions.</em>"</p>
-          <p><em class="small-text">Alex Beveridge, Director the European Investor Institute</em></p>
-        </div>
-        <div class="item">
-          <p>"<em>Paul has an all-too-rare mixture of erudition, wit and practical ideas.</em>"</p>
-          <p><em class="small-text">Rory Sutherland - Vice Chairman, Ogilvy & Mather UK</em></p>
-        </div>
+  <div id="carousel-example-generic2" class="carousel slide banner carousel-fade" data-ride="carousel" data-interval="5000" data-pause="null">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url('main-1.jpg') %>)">
+      </div>
+      <div class="item banner banner2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_url('main-2.jpg') %>)">
       </div>
     </div>
   </div>
-  <!-- Wrapper for slides -->
-</div>
+  <%= render 'shared/navbar' %>
+  <div class="banner-content" itemscope>
+    <h1 itemprop="name">Paul Craven</h1>
+    <%= link_to "#about" do %>
+      <h4 id="behav" itemprop="jobTitle">Behavioural Economics Expert</h4>
+    <% end %>
+    <%= link_to "#talks" do %>
+      <h4 itemprop="hasOccupation">Professional Speaker</h4>
+    <% end %>
+    <%= link_to "#coaching" do %>
+      <h4 itemprop="hasOccupation">Masterclass Coach</h4>
+    <% end %>
+    <button class="book-btn-green" data-bs-toggle="modal" data-bs-target="#myModal">Contact Me</button>
+    <div class="head-test">
+      <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000" data-pause="null">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <p>"<em>Paul is an accomplished presenter who never disappoints and if you need someone to speak or coach on Behavioural Economics, I cannot recommend him highly enough.</em>”</p>
+            <p><em class="small-text">Frank Dolan, Chartered FCSI Partner & Chartered Wealth Manager Laurence Milbrook & Co</em></p>
+          </div>
+          <div class="item">
+            <p>"<em>He has the rare ability to both entertain and educate, making the audience question previously held assumptions.</em>"</p>
+            <p><em class="small-text">Alex Beveridge, Director the European Investor Institute</em></p>
+          </div>
+          <div class="item">
+            <p>"<em>Paul has an all-too-rare mixture of erudition, wit and practical ideas.</em>"</p>
+            <p><em class="small-text">Rory Sutherland - Vice Chairman, Ogilvy & Mather UK</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Wrapper for slides -->
+  </div>
 </div>
 <div class="arrow-container">
   <a href="#about">

@@ -1,12 +1,10 @@
-<div class="navbar-sparks navbar-fixed-top">
+<div class="navbar-sparks navbar fixed-top">
   <!-- Logo -->
   <%= link_to root_path do %>
     <%= image_tag "logo.png", class: "navbar-sparks-brand", style: "height: 110px", alt: "paul craven logo" %>
   <% end %>
-
   <!-- Right Navigation -->
-  <div class="navbar-sparks-right hidden-xs hidden-sm">
-
+  <div class="navbar-sparks-right d-none d-lg-block">
     <!-- Links -->
     <%= link_to "Home", "#home", class: "navbar-sparks-item navbar-sparks-link"%>
     <%= link_to "About", "#about", class: "navbar-sparks-item navbar-sparks-link"%>
@@ -15,24 +13,23 @@
     <%= link_to "My Clients", "#testimonial", class: "navbar-sparks-item navbar-sparks-link" %>
     <%= link_to "Masterclass", "#coaching", class: "navbar-sparks-item navbar-sparks-link" %>
     <% link_to "Insights", blogs_path, class: "navbar-sparks-item navbar-sparks-link"  %>
-    <a href="https://twitter.com/cravenpartners" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://twitter.com/cravenpartners" target="_blank"><i class="fab fa-x-twitter"></i></a>
     <%= link_to "Contact", "#contact", class: "navbar-sparks-item navbar-sparks-link" %>
   </div>
-
   <!-- Dropdown list appearing on mobile only -->
-  <div class="navbar-sparks-item hidden-md hidden-lg">
+  <div class="navbar-sparks-item d-lg-none">
     <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-sparks-dropdown-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#talks">Speaking</a></li>
-        <li><a href="#testimonial">My Clients</a></li>
-        <li><a href="#coaching">Masterclass</a></li>
-        <li><a href="/blogs">Insights</a></li>
-        <li><a href="https://twitter.com/cravenpartners" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#contact">Contact</a></li>
+      <i class="fa fa-bars" type="button" data-bs-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-end navbar-sparks-dropdown-menu">
+        <li><a class="dropdown-item" href="#home">Home</a></li>
+        <li><a class="dropdown-item" href="#about">About</a></li>
+        <li><a class="dropdown-item" href="#videos">Videos</a></li>
+        <li><a class="dropdown-item" href="#talks">Speaking</a></li>
+        <li><a class="dropdown-item" href="#testimonial">My Clients</a></li>
+        <li><a class="dropdown-item" href="#coaching">Masterclass</a></li>
+        <li><a class="dropdown-item" href="/blogs">Insights</a></li>
+        <li><a class="dropdown-item" href="https://twitter.com/cravenpartners" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+        <li><a class="dropdown-item" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>

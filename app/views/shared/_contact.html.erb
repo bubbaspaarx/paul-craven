@@ -1,23 +1,25 @@
 <div class="contact-wrapper" id="contact">
   <div class="container-fluid">
-    <div class="row contact-form">
+    <div class="row contact-form justify-content-center">
       <div class="testimonial-title">
         <h2 data-aos="fade-left" data-aos-duration="2000">How can I help?</h2>
       </div>
       <%= simple_form_for(resource, as: :message, url: "/message") do |f| %>
-      <div class="col-xs-12 col-sm-4 col-sm-offset-1">
-        <%= f.input :name, label: false, placeholder: "Your Name", required: true %>
-        <%= f.input :email, label: false, placeholder: "Email", required: true %>
-        <%= f.input :phone_number, label: false, placeholder: "Contact Number", required: true %>
-        <!-- <p class="hidden-md form-date">Event Date</p> -->
-        <%#= f.input :date, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date", required: true %>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-sm-offset-2">
-        <%= f.input :body, label: false, as: :text,  placeholder: "Message for Paul", required: true %>
-        <%= f.invisible_captcha :address %>
-        <%= f.button :submit, "Send", class: 'send-button', id: "button1" %>
-        <%#= recaptcha_tags %>
-      </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-4">
+            <%= f.input :name, label: false, placeholder: "Your Name", required: true %>
+            <%= f.input :email, label: false, placeholder: "Email", required: true %>
+            <%= f.input :phone_number, label: false, placeholder: "Contact Number", required: true %>
+            <!-- <p class="hidden-md form-date">Event Date</p> -->
+            <%#= f.input :date, as: :string, input_html: { class: 'datepicker' }, label: false, placeholder: "Event Date", required: true %>
+          </div>
+          <div class="col-sm-4">
+            <%= f.input :body, label: false, as: :text,  placeholder: "Message for Paul", required: true %>
+            <%= f.invisible_captcha :address %>
+            <%= f.button :submit, "Send", class: 'send-button', id: "button1" %>
+            <%#= recaptcha_tags %>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
